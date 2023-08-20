@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Investment Decision - Ml Based Tool</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Modernize Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link href="static/Assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="static/Assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="static/Assets/css/style4.css">
+    <link href="static/Assets/css/fontawesome-all.css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h1>
+                    <a href="#">INVESTMENT DECISION  </a>
+                </h1>
+                <span>ID</span>
+            </div>
+            <div class="profile-bg"></div>
+
+        </nav>
+
+        <div id="content">
+            <nav class="navbar navbar-default mb-xl-5 mb-4">
+                <div class="container-fluid">
+
+                    <div class="navbar-header">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+
+                    <ul class="top-icons-agileits-w3layouts float-right">
+                       
+                       
+
+                    </ul>
+                </div>
+            </nav>
+            <section class="forms-section">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="outer-w3-agile col-xl mt-3 mr-xl-3">
+                            <h4 class="tittle-w3-agileits mb-4">Investment Decision - Ml Based Tool</h4>
+                            <form action="/predict" method="POST">
+                           <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Input your News  </label>
+              <textarea  class="form-control" id="user_input" name="user_input" rows="3" required=""></textarea>
+                                </div>
+                                
+                                
+                                <div class="form-group row">
+                                    <div class="col-sm-10">
+                                
+										 <input type="submit" class="btn btn-primary" value="Analysis  ">
+										<a href="/" class="btn btn-success">   Reload</a>
+
+                                    </div>
+                                </div>
+                            </form>
+							
+ 
+
+							{% if user_input and predicted_sentiment %}
+							<div class="alert alert-success" role="alert">
+        <p>Your Text: {{ user_input }}</p>
+                                <b/>        <b/> <b/>    <b/>
+        <p>ML Says   : {{ predicted_sentiment }}</p>
+			</div>
+    {% endif %}
+
+
+                        </div>
+                    </div>
+                </div>	
+            </section>
+
+
+            <div class="copyright-w3layouts py-xl-3 py-2 mt-xl-5 mt-4 text-center">
+                <p>© 2023   INVESTMENT DECISION - ML BASED TOOL
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src='static/Assets/js/jquery-2.2.3.min.js'></script>
+    <script>
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+   
+ 
+    <script src="static/Assets/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
